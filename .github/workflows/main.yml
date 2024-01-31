@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: hashcatt/m324_devops_test_refcard02/your-image-name:latest
+          tags: hashcatt/m324_devops_test_refcard02:latest
