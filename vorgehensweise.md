@@ -1,3 +1,8 @@
+# Packages
+
+- https://github.com/users/pcaracal/packages/container/package/m324_devops_test_refcard02
+- https://hub.docker.com/repository/docker/hashcatt/m324_devops_test_refcard02/general
+
 # What was done
 
 ## 31.01.2024
@@ -23,6 +28,8 @@
 6. Gh actions can't push to the ghcr since GITHUB_TOKEN cannot crud in the ghcr
 7. Create a PAT with the perms needed to push to the ghcr
 8. Push again
+9. The image is now in the ghcr
+10. Add links to the ghcr and docker hub
 
 ## Links
 
