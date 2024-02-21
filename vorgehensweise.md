@@ -20,6 +20,9 @@
 3. Request Assistance from GitHub Copilot to utilize the GitHub Container Registry
 4. Update the `main.yml` file to push the image to the GitHub Container Registry
 5. Push the changes to the repository
+6. Gh actions can't push to the ghcr since GITHUB_TOKEN cannot crud in the ghcr
+7. Create a PAT with the perms needed to push to the ghcr
+8. Push again
 
 ## Links
 
