@@ -20,3 +20,9 @@
 3. Request Assistance from GitHub Copilot to utilize the GitHub Container Registry
 4. Update the `main.yml` file to push the image to the GitHub Container Registry
 5. Push the changes to the repository
+
+## Links
+
+- https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
+- https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry
+- https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
