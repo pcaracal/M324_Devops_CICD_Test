@@ -31,8 +31,15 @@
 9. The image is now in the ghcr
 10. Add links to the ghcr and docker hub
 
+## 28.02.2024
+
+1. Research "git tagging" after it being mentioned by the teacher
+2. Create a tag for the current version to try it out
+
 ## Links
 
 - https://docs.github.com/en/packages/learn-github-packages/introduction-to-github-packages
 - https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-docker-registry
 - https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+
+- https://git-scm.com/book/en/v2/Git-Basics-Tagging
