@@ -35,6 +35,11 @@
 
 1. Research "git tagging" after it being mentioned by the teacher
 2. Create a tag for the current version to try it out
+3. To add tag create one and `git push origin 1.0.0` (tag)
+4. Now the tag is visible in the releases tab of the
+   repo (https://github.com/pcaracal/M324_Devops_CICD_Test/releases/tag/1.0.0)
+5. Consult gh copilot on how to make the pipeline only run on a tagged push and modify the `main.yml`
+6. Attempt to get the tag name and use it as the tag for the docker image
 
 ## Links
 
