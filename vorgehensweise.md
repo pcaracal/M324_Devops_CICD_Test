@@ -41,6 +41,10 @@
 5. Consult gh copilot on how to make the pipeline only run on a tagged push and modify the `main.yml`
 6. Attempt to get the tag name and use it as the tag for the docker image
 7. Try to implement automatic release create inside the workflow
+8. Mistake: Trying to push first to tag and then master doesn't use latest code in workflow -> First have to push to
+   master, and then push to tag
+9. The GITHUB_TOKEN does not have access to create releases, -> create a PAT
+10. Push and pray
 
 ## Links
 
