@@ -65,3 +65,4 @@
 
 - https://git-scm.com/book/en/v2/Git-Basics-Tagging
 - https://github.com/aws-actions/amazon-ecr-login#docker-credentials
+- https://github.com/aws-actions/configure-aws-credentials
