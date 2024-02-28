@@ -40,6 +40,7 @@
    repo (https://github.com/pcaracal/M324_Devops_CICD_Test/releases/tag/1.0.0)
 5. Consult gh copilot on how to make the pipeline only run on a tagged push and modify the `main.yml`
 6. Attempt to get the tag name and use it as the tag for the docker image
+7. Try to implement automatic release create inside the workflow
 
 ## Links
 
