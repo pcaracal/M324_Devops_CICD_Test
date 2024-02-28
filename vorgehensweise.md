@@ -55,6 +55,7 @@
 3. Create secrets for the repo `AWS_ECR_REGISTRY` & `AWS_ECR_REPOSITORY`, and for aws login
 4. Create AWS login code and and push to ECR
 5. Push
+6. Aws login fails because password is not masked, start reading the documentation
 
 ## Links
 
@@ -63,3 +64,4 @@
 - https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry
 
 - https://git-scm.com/book/en/v2/Git-Basics-Tagging
+- https://github.com/aws-actions/amazon-ecr-login#docker-credentials
