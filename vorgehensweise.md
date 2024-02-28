@@ -56,6 +56,13 @@
 4. Create AWS login code and and push to ECR
 5. Push
 6. Aws login fails because password is not masked, start reading the documentation
+7. AWS Login finally works:
+    - The login action can't take any inputs, must use *configure-aws-credentials* action to set the login credentials
+      from secrets before the login action
+    - Must have the session token as a secret in the configure action
+8. The image is now in the ECR
+9. Start research on how to use ECS
+10. Create ECS cluster
 
 ## Links
 

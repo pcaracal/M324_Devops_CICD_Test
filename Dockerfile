@@ -13,5 +13,7 @@ RUN npm install
 # Step 5: Copy the rest of your application's source code into the Docker image
 COPY . .
 
+EXPOSE 3000
+
 # Step 6: Specify the command to start the application
 CMD ["npm", "start"]
