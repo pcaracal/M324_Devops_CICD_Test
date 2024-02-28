@@ -45,6 +45,16 @@
    master, and then push to tag
 9. The GITHUB_TOKEN does not have access to create releases, -> create a PAT
 10. Push and pray
+11. It works: Upon pushing to a new tag, the pipeline runs and creates a docker image using the tag and creates a
+    release which has a link to the docker image on ghcr
+
+### AWS
+
+1. Login, etc.
+2. Read the document `12.2` and create new ECR named `refcard02`
+3. Create secrets for the repo `AWS_ECR_REGISTRY` & `AWS_ECR_REPOSITORY`, and for aws login
+4. Create AWS login code and and push to ECR
+5. Push
 
 ## Links
 
