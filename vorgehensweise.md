@@ -86,6 +86,9 @@
     - ![img.png](running_app.png)
 10. Consult gh copilot for info on automatically updating the image in the task definition and restart service
 11. Update the main.yml workflow
+12. It does not work, of course: Gh actions doesn't replace secrets within a json file
+13. Blindly copypaste AI generated code to replace values within the json file
+14. Push
 
 ### Images:
 
