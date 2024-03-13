@@ -84,6 +84,8 @@
 8. "refcard02-s-new deployment is in progress. It takes a few minutes"
 9. It works
     - ![img.png](running_app.png)
+10. Consult gh copilot for info on automatically updating the image in the task definition and restart service
+11. Update the main.yml workflow
 
 ### Images:
 
