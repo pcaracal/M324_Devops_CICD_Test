@@ -5,6 +5,10 @@
 
 # What was done
 
+## Repo Url
+
+[url](https://github.com/pcaracal/M324_Devops_CICD_Test/)
+
 ## 31.01.2024
 
 1. Consult GitHub Copilot
@@ -63,6 +67,34 @@
 8. The image is now in the ECR
 9. Start research on how to use ECS
 10. Create ECS cluster
+
+## 13.03.2024
+
+1. Get a headache because AWS is incapable of creating any logs or providing any useful information on why tasks cannot
+   launch
+2. Try to increase cpu cores and ram for the task definition and container
+    - ![img.png](increase_limits.png)
+3. It launches
+4. Can't connect to the website with the given public ip
+5. Create a new security group (It must allow the port 3000 inbound (same as in the dockerfile), so the react app can be
+   accessed from outside)
+6. Can't find out where to use it
+7. Can't change SG of a service, create a new one
+    - ![img.png](service_select_sg.png)
+8. "refcard02-s-new deployment is in progress. It takes a few minutes"
+9. It works
+    - ![img.png](running_app.png)
+
+### Images:
+
+- ECS Cluster Overview
+    - ![img.png](ecs_cluster.png)
+- ECR Image
+    - ![img.png](ecr_image.png)
+- GH Actions Workflow
+    - ![img.png](gh_action_workflow.png)
+- Automated Release creation from tag push
+    - ![img.png](release.png)
 
 ## Links
 
