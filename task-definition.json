@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "refcard02",
-      "image": "${{ secrets.AWS_ECR_REGISTRY }}/${{ secrets.AWS_ECR_REPOSITORY }}:${{ steps.get_tag.outputs.tag }}",
+      "image": "{{ secrets.AWS_ECR_REGISTRY }}/{{ secrets.AWS_ECR_REPOSITORY }}:{{ steps.get_tag.outputs.tag }}",
       "cpu": 2048,
       "memory": 8192,
       "memoryReservation": 4096,
@@ -35,8 +35,8 @@
       "systemControls": []
     }
   ],
-  "taskRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/LabRole",
-  "executionRoleArn": "arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/LabRole",
+  "taskRoleArn": "arn:aws:iam::{{ secrets.AWS_ACCOUNT_ID }}:role/LabRole",
+  "executionRoleArn": "arn:aws:iam::{{ secrets.AWS_ACCOUNT_ID }}:role/LabRole",
   "networkMode": "awsvpc",
   "requiresCompatibilities": [
     "FARGATE"

@@ -63,13 +63,13 @@ jobs:
         run: |
           docker tag ghcr.io/pcaracal/m324_devops_test_refcard02:${{ steps.get_tag.outputs.tag }} ${{ secrets.AWS_ECR_REGISTRY }}/${{ secrets.AWS_ECR_REPOSITORY }}:${{ steps.get_tag.outputs.tag }}
           docker push ${{ secrets.AWS_ECR_REGISTRY }}/${{ secrets.AWS_ECR_REPOSITORY }}:${{ steps.get_tag.outputs.tag }}
-         
+
       - name: Replace secrets in task definition
         run: |
-          sed -i 's/\${{ secrets.AWS_ECR_REGISTRY }}/${{ secrets.AWS_ECR_REGISTRY }}/g' task-definition.json
-          sed -i 's/\${{ secrets.AWS_ECR_REPOSITORY }}/${{ secrets.AWS_ECR_REPOSITORY }}/g' task-definition.json
-          sed -i 's/\${{ steps.get_tag.outputs.tag }}/${{ steps.get_tag.outputs.tag }}/g' task-definition.json
-          sed -i 's/\${{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_ACCOUNT_ID }}/g' task-definition.json
+          sed -i 's/{{ secrets.AWS_ECR_REGISTRY }}/${{ secrets.AWS_ECR_REGISTRY }}/g' task-definition.json
+          sed -i 's/{{ secrets.AWS_ECR_REPOSITORY }}/${{ secrets.AWS_ECR_REPOSITORY }}/g' task-definition.json
+          sed -i 's/{{ steps.get_tag.outputs.tag }}/${{ steps.get_tag.outputs.tag }}/g' task-definition.json
+          sed -i 's/{{ secrets.AWS_ACCOUNT_ID }}/${{ secrets.AWS_ACCOUNT_ID }}/g' task-definition.json
 
       - name: Update task definition and restart service
         run: |
